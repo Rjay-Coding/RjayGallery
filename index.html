@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RJay's Gallery</title>
+</head>
+  <style>
+   *{
+     margin: 50;
+     padding: 0;
+   }
+    .background {
+      background-image: url(bg.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      color: black;
+      font-size: 2em;
+      font-family: cursive, sans-serif;
+      position: relative;
+      background-attachment: scroll;
+    }
+
+
+    .background::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4); 
+      z-index: 1;
+    }
+    
+    .text{
+      z-index: 2;
+    }
+    
+    .images{
+      padding-left: 5px;
+    }
+    
+  </style>
+<body style="background-color: rosybrown;">
+
+  <div class="background">
+  <div class="text">
+  <div class="images">
+     <h1>My Gallery</h1>
+     <h2>Images</h2>
+       
+       <img src="images/img1.jpeg" alt="Chibi Neuvillette" style="width:200px; height:200px;">
+       
+       <img src="images/img2.jpeg" alt="Chibi Neuvillette" style="width:200px; height:200px;">
+       
+       <img src="images/img3.jpeg" alt="Chibi Neuvillette" style="width:200px; height:200px;">
+       
+       <img src="images/img4.jpeg" alt="Chibi Neuvillette" style="width:200px; height:200px;">
+       
+       <img src="images/img5.jpeg" alt="Chibi Neuvillette" style="width:200px; height:200px;">
+      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <h2>Audio</h2>
+     
+         <audio src="what.mp3" controls></audio>
+           
+         <audio src="dam.mp3" controls></audio>
+         
+         
+     
+
+   </div>
+</body>
+</html>
